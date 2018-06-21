@@ -5,13 +5,10 @@ return [
         [
             "name" => "welcome",
             "html5Mode" => true,
-            "title" => "Welcome to Laravel",
+            "title" => "Welcome to Laravel", //Initial title of the app
             "bower" => [
                 "components" => [
-                    "jquery",
-                    "angular",
-                    "bootstrap",
-                    "angular-ui-router"
+                    //List of all the components required from bower
                 ]
             ],
             "site" => [

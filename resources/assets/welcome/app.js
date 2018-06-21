@@ -1,5 +1,9 @@
+import angular from "angular";
+import uiRouter from "angular-ui-router";
+import "./style.less";
+
 angular.module($appName, [
-    'ui.router'
+    uiRouter
 ])
 
         .config([
@@ -13,7 +17,8 @@ angular.module($appName, [
 
                         .state("home", {
                             url: "/",
+                            title: "Welcome",
                             templateUrl: getTemplateUrl("welcome")
                         })
             }
-        ])
+        ]);

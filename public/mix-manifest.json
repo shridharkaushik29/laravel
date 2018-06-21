@@ -1,3 +1,6 @@
 {
-    "/assets/welcome/app.js": "/assets/welcome/app.js"
+    "/js/vendor.js": "/js/vendor.js",
+    "/assets/welcome/app.js": "/assets/welcome/app.js",
+    "/js/index.js": "/js/index.js",
+    "/js/manifest.js": "/js/manifest.js"
 }

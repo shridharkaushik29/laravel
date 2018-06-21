@@ -12,3 +12,13 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/welcome/app.js', 'assets/welcome');
+
+mix.js('resources/assets/index.js', 'js/index.js')
+
+        .extract([
+            "jquery",
+            "bootstrap",
+            "angular",
+            "angular-ui-router",
+            "bootstrap/scss/bootstrap.scss"
+        ])
