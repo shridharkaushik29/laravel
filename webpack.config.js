@@ -2,17 +2,18 @@ const path = require("path");
 
 module.exports = (env = {}) => {
 
-    if (!env || !env.app) {
+    const {app = 'welcome', mode} = env;
+
+    if (!app) {
         throw "Please provide an app name";
     }
 
-    const {app} = env;
-
-    publicPath = `/assets/${app}/`;
+    let publicPath = `./assets/${app}/`;
 
     let src = path.resolve(__dirname, `resources/assets/${app}/`);
 
     return {
+        mode: mode,
         entry: [
             path.resolve(src, "index.ts"),
             `!file-loader?name=style.css!extract-loader!css-loader!sass-loader!${path.resolve(src, "index.scss")}`

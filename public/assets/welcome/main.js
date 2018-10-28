@@ -18,7 +18,7 @@ eval("module.exports = __webpack_require__.p + \"style.css\";\n\n//# sourceURL=w
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<ui-view></ui-view>\";\n\n//# sourceURL=webpack:///./resources/assets/welcome/body.html?");
+eval("module.exports = \"<md-content class=\\\"view-cover\\\">\\n    <ui-view></ui-view>\\n</md-content>\\n\";\n\n//# sourceURL=webpack:///./resources/assets/welcome/body.html?");
 
 /***/ }),
 
@@ -77,7 +77,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nfunction storage_url(path) {\r\n    return \"/storage/\" + path;\r\n}\r\nexports.storage_url = storage_url;\r\n\n\n//# sourceURL=webpack:///./resources/assets/welcome/urls.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nfunction storage_url(path) {\r\n    return $siteUrl + \"/storage/\" + path;\r\n}\r\nexports.storage_url = storage_url;\r\n\n\n//# sourceURL=webpack:///./resources/assets/welcome/urls.ts?");
 
 /***/ }),
 

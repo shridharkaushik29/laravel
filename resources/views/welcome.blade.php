@@ -1,8 +1,11 @@
 @angular(welcome)
 <html>
 <head>
-    <meta name="viewport" content="height=device-height, width=device-width">
+    @title
+    @favicon
+    @responsive
     @include("angular::main-script")
+    {!!$app->html()->google_font("Raleway")!!}
     <link href="{{$app->asset("style.css")->url()}}" rel="stylesheet"/>
 </head>
 <body>
