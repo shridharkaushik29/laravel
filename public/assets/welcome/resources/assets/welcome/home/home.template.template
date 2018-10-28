@@ -1,0 +1,17 @@
+<div class="view-cover" layout="row" layout-align="center center">
+    <div class="content" flex="100" flex-sm="90" flex-gt-sm="50" layout="column">
+        <div>
+            <img ng-src="{{$resolve.logo_url}}" class="w-100">
+        </div>
+        <div class="title">
+            Laravel
+        </div>
+
+        <h4 class="mb-3">with the Power of <b>AngularJS</b></h4>
+
+        <div class="links">
+            <a href="https://laravel.com/docs">Laravel Documentation</a>
+            <a href="https://github.com/shridharkaushik29/laravel">GitHub</a>
+        </div>
+    </div>
+</div>

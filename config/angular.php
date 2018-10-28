@@ -10,11 +10,6 @@ return [
                 "components" => [
                     //List of all the components required from bower
                 ]
-            ],
-            "site" => [
-                "routes" => [
-                    "{path?}"
-                ]
             ]
         ]
     ]
