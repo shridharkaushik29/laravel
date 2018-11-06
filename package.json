@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "webpack --env.mode=development --progress",
     "watch": "yarn dev --watch",
-    "prod": "yarn --env.mode=production --progress"
+    "prod": "yarn --env.mode=production --progress",
+    "serve": "php artisan serve"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

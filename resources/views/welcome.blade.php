@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="pre-loader">
-    <img class="logo" src="{{url("storage/angular_laravel.jpg")}}">
+    <img class="logo" src="{{url("storage/laravel-logo.png")}}">
     <p>Loading Application</p>
 </div>
 </body>
