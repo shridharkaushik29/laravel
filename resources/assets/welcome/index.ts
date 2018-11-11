@@ -1,5 +1,6 @@
 import angular from "angular";
 import module from "./module";
+import "./config";
 import "./home";
 
 document.querySelector("body").innerHTML = require("./body.html");

@@ -1,6 +1,6 @@
 <div class="view-cover" layout="row" layout-align="center center" layout-wrap>
     <div flex="80" layout="row" class="w-100" layout-align="center center">
-        <div flex ng-repeat="logo in logos" class="p-4">
+        <div flex ng-repeat="logo in ctrl.logos" class="p-4">
             <img ng-src="{{logo.url}}" class="w-100">
         </div>
     </div>
