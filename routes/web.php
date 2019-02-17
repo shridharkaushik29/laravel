@@ -11,6 +11,16 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('angularjs');
+})->name("angularjs");
+
+Route::get('/angular', function () {
+    return view('angular');
+})->name("angular");
+
+Route::get('/react', function () {
+    return view('react');
+})->name("react");

@@ -1,14 +1,18 @@
 const path = require("path");
+const webpack = require("webpack");
+require("dotenv").config();
 
 module.exports = (env = {}) => {
 
-    const {app = 'welcome', mode} = env;
+    const {app, mode} = env;
 
     if (!app) {
         throw "Please provide an app name";
     }
 
-    let publicPath = `./assets/${app}/`;
+    const {APP_URL, ASSETS_URL} = process.env;
+
+    let publicPath = `${ASSETS_URL}/assets/${app}/`;
 
     let src = path.resolve(__dirname, `resources/assets/${app}/`);
 
@@ -38,8 +42,16 @@ module.exports = (env = {}) => {
         module: {
             rules: [
                 {
-                    test: /\.ts$/,
-                    use: ["ts-loader"]
+                    test: /\.ts(x?)$/,
+                    use: [
+                        {
+                            loader: "ts-loader",
+                            options: {
+                                transpileOnly: true,
+                                experimentalWatchApi: true
+                            }
+                        }
+                    ]
                 },
                 {
                     test: /(?!component)\.(css|less|scss)$/,
@@ -100,7 +112,12 @@ module.exports = (env = {}) => {
             ]
         },
         resolve: {
-            extensions: ['.ts', '.js', '.tsx']
-        }
+            extensions: ['.js', '.ts', '.tsx']
+        },
+        plugins: [
+            new webpack.DefinePlugin({
+                env: JSON.stringify({APP_URL})
+            })
+        ]
     }
 }
