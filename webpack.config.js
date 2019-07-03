@@ -52,19 +52,12 @@ module.exports = (env = {}) => {
                     ]
                 },
                 {
-                    test: /(?!component)\.(css|less|scss)$/,
+                    test: /(!component)\.(css|less|scss)$/,
                     use: ["style-loader", "css-loader"]
                 },
                 {
-                    test: /external\.(css|less|scss)$/,
-                    use: [
-                        {
-                            loader: "file-loader",
-                            options: {
-                                name: "[path][name].css"
-                            }
-                        }
-                    ]
+                    test: /component\.(scss|less)$/,
+                    use: ["css-loader"]
                 },
                 {
                     test: /\.scss$/,
@@ -73,14 +66,6 @@ module.exports = (env = {}) => {
                 {
                     test: /\.less$/,
                     use: ["less-loader"]
-                },
-                {
-                    test: /\.component\.scss$/,
-                    use: "!file-loader?name=[path][name].css!extract-loader!css-loader!sass-loader"
-                },
-                {
-                    test: /\.component\.less$/,
-                    use: "!file-loader?name=[path][name].css!extract-loader!css-loader!less-loader"
                 },
                 {
                     test: /(component|template)\.html$/,

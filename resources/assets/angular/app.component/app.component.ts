@@ -3,6 +3,7 @@ import {storage_url} from "../../node_modules/urls";
 
 @Component({
     templateUrl: require("./app.component.html"),
+    styles: [require("./app.component.scss").toString()],
     selector: "#app"
 })
 export class AppComponent {
