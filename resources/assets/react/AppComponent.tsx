@@ -12,11 +12,17 @@ export class AppComponent extends React.Component {
     state: any = {
         images: [
             {
-                url: storage_url("angular.svg")
+                title: "AngularJS",
+                url: storage_url("angularjs-logo.svg"),
+                href: env.APP_URL
             }, {
-                url: storage_url("react-logo.svg")
+                title: "React",
+                url: storage_url("react-logo.svg"),
+                href: env.APP_URL + "/react"
             }, {
-                url: storage_url("vue-logo.svg")
+                title: "Angular",
+                url: storage_url("angular-logo.png"),
+                href: env.APP_URL + "/angular"
             }
         ]
     }
@@ -35,7 +41,9 @@ export class AppComponent extends React.Component {
                     {
                         images.map(image =>
                             <Grid item xs={6} md className="p-4" key={image.url}>
-                                <img className="w-100" src={image.url}/>
+                                <a href={image.href}>
+                                    <img className="w-100" src={image.url} alt={image.title} title={image.title}/>
+                                </a>
                             </Grid>
                         )
                     }
@@ -46,7 +54,7 @@ export class AppComponent extends React.Component {
                     </Typography>
 
                     <h4 className="mb-3 text-center">
-                        with the Power of React and Material UI
+                        with the Power of React, Material UI and Webpack
                     </h4>
 
                     <Grid container justify="center">

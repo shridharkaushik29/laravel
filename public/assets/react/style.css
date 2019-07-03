@@ -6284,7 +6284,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/react/580d0778ad254335be45bf58bb449f43.ttf); }
+  src: url(http://localhost:8000/assets/react/580d0778ad254335be45bf58bb449f43.ttf); }
 
 html, body {
   background-color: #fff;

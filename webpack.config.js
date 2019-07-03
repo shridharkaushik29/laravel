@@ -4,15 +4,13 @@ require("dotenv").config();
 
 module.exports = (env = {}) => {
 
-    const {app, mode} = env;
+    const {app, mode, APP_URL} = {...process.env, ...env};
 
     if (!app) {
         throw "Please provide an app name";
     }
 
-    const {APP_URL, ASSETS_URL} = process.env;
-
-    let publicPath = `${ASSETS_URL}/assets/${app}/`;
+    let publicPath = `${APP_URL}/assets/${app}/`;
 
     let src = path.resolve(__dirname, `resources/assets/${app}/`);
 

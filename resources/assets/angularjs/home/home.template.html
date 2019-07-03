@@ -1,7 +1,7 @@
 <div class="view-cover" layout="row" layout-align="center center" layout-wrap>
     <div flex="100" flex-gt-sm="60" layout="row" class="w-100" layout-align="center center">
         <a href="{{logo.href}}" flex ng-repeat="logo in ctrl.logos" class="p-4">
-            <img ng-src="{{logo.url}}" class="w-100">
+            <img ng-src="{{logo.url}}" class="w-100" alt="{{logo.title}}" title="{{logo.title}}">
         </a>
     </div>
     <div flex="100" flex-sm="90" flex-gt-sm="50" layout="column" layout-align="center center">
@@ -10,7 +10,7 @@
         </div>
 
         <h4 class="mb-3 text-center">
-            with the Power of <b>AngularJS and Angular Material with Webpack</b>
+            with the Power of <b>AngularJS, AngularJS Material and Webpack</b>
         </h4>
 
         <div>

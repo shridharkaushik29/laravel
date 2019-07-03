@@ -20098,7 +20098,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/angularjs/580d0778ad254335be45bf58bb449f43.ttf); }
+  src: url(http://localhost:8000/assets/angularjs/580d0778ad254335be45bf58bb449f43.ttf); }
 
 html, body {
   background-color: #fff;

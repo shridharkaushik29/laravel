@@ -8,12 +8,17 @@ import {storage_url} from "../../node_modules/urls";
 export class AppComponent {
     logos = [
         {
-            url: storage_url("angular.svg")
+            title: "AngularJS",
+            url: storage_url("angularjs-logo.svg"),
+            href: env.APP_URL
         }, {
+            title: "React",
             url: storage_url("react-logo.svg"),
             href: env.APP_URL + "/react"
         }, {
-            url: storage_url("vue-logo.svg")
+            title: "Angular",
+            url: storage_url("angular-logo.png"),
+            href: env.APP_URL + "/angular"
         }
     ]
 }

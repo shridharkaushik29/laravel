@@ -1,5 +1,4 @@
 import module from "../module";
-import angular, {IScope} from "angular";
 import {storage_url} from "urls";
 import {StateProvider} from "angular-ui-router";
 
@@ -14,20 +13,22 @@ module
                 .state("home", {
                     url: "/",
                     templateUrl: require("./home.template.html"),
-                    resolve: {
-                        logo_url: () => storage_url("angular_laravel.jpg")
-                    },
                     controllerAs: "ctrl",
                     controller: class {
 
                         logos = [
                             {
-                                url: storage_url("angular.svg")
+                                title: "AngularJS",
+                                url: storage_url("angularjs-logo.svg"),
+                                href: env.APP_URL
                             }, {
+                                title: "React",
                                 url: storage_url("react-logo.svg"),
                                 href: env.APP_URL + "/react"
                             }, {
-                                url: storage_url("vue-logo.svg")
+                                title: "Angular",
+                                url: storage_url("angular-logo.png"),
+                                href: env.APP_URL + "/angular"
                             }
                         ]
 
