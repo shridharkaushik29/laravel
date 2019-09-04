@@ -12,7 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "shridharkaushik29/laravel-angular-app": "1.1.*",
+        "shridharkaushik29/laravel-angular-app": "2.1.*",
         "shridharkaushik29/laravel-users": "1.0.*"
     },
     "require-dev": {

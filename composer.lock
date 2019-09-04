@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6caf779aa1a426b0f165a4bc7ef1df3e",
+    "content-hash": "7cc4fd22dac637b22b2e610c6ffd2b6a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -678,74 +678,6 @@
                 "psysh"
             ],
             "time": "2019-08-07T15:10:45+00:00"
-        },
-        {
-            "name": "laravelcollective/html",
-            "version": "v5.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "0e360143d3476fe4141d267a260c140569fa207b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/0e360143d3476fe4141d267a260c140569fa207b",
-                "reference": "0e360143d3476fe4141d267a260c140569fa207b",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/http": "5.8.*",
-                "illuminate/routing": "5.8.*",
-                "illuminate/session": "5.8.*",
-                "illuminate/support": "5.8.*",
-                "illuminate/view": "5.8.*",
-                "php": ">=7.1.3"
-            },
-            "require-dev": {
-                "illuminate/database": "5.8.*",
-                "mockery/mockery": "~1.0",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.8-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Collective\\Html\\HtmlServiceProvider"
-                    ],
-                    "aliases": {
-                        "Form": "Collective\\Html\\FormFacade",
-                        "Html": "Collective\\Html\\HtmlFacade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Collective\\Html\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                },
-                {
-                    "name": "Adam Engebretson",
-                    "email": "adam@laravelcollective.com"
-                }
-            ],
-            "description": "HTML and Form Builders for the Laravel Framework",
-            "homepage": "https://laravelcollective.com",
-            "time": "2019-03-01T22:53:41+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1485,26 +1417,27 @@
         },
         {
             "name": "shridharkaushik29/laravel-angular-app",
-            "version": "1.1.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shridharkaushik29/laravel-angular-app.git",
-                "reference": "e687b345d852a8f112400647016ad0878c904e8f"
+                "reference": "2ede9fffe9f120719af64e32b103e9ad224ae7b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shridharkaushik29/laravel-angular-app/zipball/e687b345d852a8f112400647016ad0878c904e8f",
-                "reference": "e687b345d852a8f112400647016ad0878c904e8f",
+                "url": "https://api.github.com/repos/shridharkaushik29/laravel-angular-app/zipball/2ede9fffe9f120719af64e32b103e9ad224ae7b9",
+                "reference": "2ede9fffe9f120719af64e32b103e9ad224ae7b9",
                 "shasum": ""
             },
             "require": {
-                "shridharkaushik29/laravel-bower": "*"
+                "ext-json": "*",
+                "laravel/framework": "5.8.*"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Shridhar\\Angular\\Provider"
+                        "Shridhar\\Angular\\AngularProvider"
                     ]
                 }
             },
@@ -1524,50 +1457,7 @@
                 }
             ],
             "description": "AngularJS Applications in Laravel",
-            "time": "2018-11-11T02:29:14+00:00"
-        },
-        {
-            "name": "shridharkaushik29/laravel-bower",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/shridharkaushik29/laravel-bower.git",
-                "reference": "323bebd40f408c19cc1e9ea157dd0aac2c8cd3fb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/shridharkaushik29/laravel-bower/zipball/323bebd40f408c19cc1e9ea157dd0aac2c8cd3fb",
-                "reference": "323bebd40f408c19cc1e9ea157dd0aac2c8cd3fb",
-                "shasum": ""
-            },
-            "require": {
-                "laravelcollective/html": "^5.4"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Shridhar\\Bower\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Shridhar\\Bower\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Shridhar Sharma",
-                    "email": "shridharkaushik29@gmail.com"
-                }
-            ],
-            "description": "Autoload bower dependencies in laravel",
-            "time": "2018-07-18T04:50:26+00:00"
+            "time": "2019-09-01T09:23:36+00:00"
         },
         {
             "name": "shridharkaushik29/laravel-users",
@@ -4793,7 +4683,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
