@@ -10,9 +10,9 @@
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "5.7.*",
+        "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "shridharkaushik29/laravel-angular-app": "2.0.*",
+        "shridharkaushik29/laravel-angular-app": "1.1.*",
         "shridharkaushik29/laravel-users": "1.0.*"
     },
     "require-dev": {
@@ -55,6 +55,6 @@
         "sort-packages": true,
         "optimize-autoloader": true
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
