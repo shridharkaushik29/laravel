@@ -10,10 +10,9 @@
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "5.8.*",
+        "laravel/framework": "6.0.*",
         "laravel/tinker": "^1.0",
-        "shridharkaushik29/laravel-angular-app": "1.1.*",
-        "shridharkaushik29/laravel-users": "1.0.*"
+        "shridharkaushik29/laravel-angular-app": "3.0.*"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
